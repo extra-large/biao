@@ -23,6 +23,7 @@
 			p{
 				text-align: center;
 				padding-bottom:20px;
+				font-size: 40px;
 				font-weight: 900;
 			}
 			img{
@@ -31,14 +32,13 @@
 				width: 350px;
 			}
 			.yy{
-				text-align: center;
 				padding-top:500px;
 			}
 		</style>
 		<script src="js/jquery-1.8.3.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript">
 			$().ready(function(){
-				var arr = ["222111","222222","222333"];
+				var arr = ["房子的名字写你的","保大","我妈会游泳","你重要","听你的"];
 				var i = 0;
 				$("#clieckbox2").click(function(){
 					if (i>=arr.length) {
@@ -50,7 +50,7 @@
 					}
 				});
 				$("#clieckbox1").click(function(){
-					alert("111");
+					alert("亲爱的，谢谢你");
 				});
 			});
 		</script>
@@ -58,13 +58,13 @@
 	<body>
 		<div class="bb">
 			<div class="wenzi">
-				<h1><p>小姐姐，你过来我有一个恋爱想和你谈谈，你愿意吗？</p></h1><img src="img/aini.JPG"/>
+				<p>小姐姐，你过来我有一个恋爱想和你谈谈，你愿意吗？</p><img src="img/aini.JPG"/>
 			</div><br />
 			<p>
 			<button class="input " id="clieckbox1">愿意</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 			<button class="input " id="clieckbox2">不愿意</button>
 			</p><br />
-			<h2><p class="yy">愿意的话记得微信告诉我哦~</p></h2>
+			<p class="yy">愿意的话记得微信告诉我哦~</p>
 		</div>
 	</body>
 </html>
