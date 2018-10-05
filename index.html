@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			.input{
+				height: 60px;
+				width: 130px;
+				font-size: 20px;
+				font-weight: 700;
+				color: red;
+			}
+			*{
+				margin:0 auto;
+				padding: 0;
+			}
+			.bb{
+				height: 700px;
+				width: 350px;
+				margin-top: 150px;
+			}
+			p{
+				text-align: center;
+				padding-bottom:20px;
+				font-size: 25px;
+				font-weight: 900;
+			}
+		</style>
+		<script src="js/jquery-1.8.3.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$().ready(function(){
+				var arr = ["222111","222222","222333"];
+				var i = 0;
+				$("#clieckbox2").click(function(){
+					if (i>=arr.length) {
+						i=0;
+						alert(arr[0]);
+					}else{
+						alert(arr[i]);
+						i++;
+					}
+				});
+				$("#clieckbox1").click(function(){
+					alert("111");
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<div class="bb">
+			<div class="wenzi">
+				<p>小姐姐，你过来我有一个恋爱想和你谈谈，你愿意吗？</p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="img/aini.JPG" height="250px" width="250px"/>
+			</div><br />
+			<p>
+			<button class="input " id="clieckbox1">愿意</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<button class="input " id="clieckbox2">不愿意</button>
+			</p>
+		</div>
+	</body>
+</html>
